@@ -1,10 +1,13 @@
 ---
 label: Page
-hide_body: true
+hide_body: false
+display_field: title
 fields:
 - type: text
   name: layout
   label: layout
+  hidden: true
+  default: single-column-wide
 - type: text
   name: title
   label: title
