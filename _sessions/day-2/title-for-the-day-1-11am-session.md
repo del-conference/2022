@@ -14,7 +14,7 @@ description: ''
 enable-button-link: false
 button-text: ''
 button-url: ''
-published: false
+published: true
 
 ---
 The 11am session details.
