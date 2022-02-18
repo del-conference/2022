@@ -1,7 +1,6 @@
 ---
 enabled: true
 title: Conference page content
-published: false
 
 ---
 Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Sollicitudin ac orci phasellus egestas tellus. Molestie ac feugiat sed lectus vestibulum mattis ullamcorper. Purus sit amet volutpat consequat mauris nunc congue nisi vitae. In ante metus dictum at. Laoreet sit amet cursus sit amet dictum. Tempus egestas sed sed risus. Neque aliquam vestibulum morbi blandit cursus risus at ultrices mi. Turpis in eu mi bibendum. Pellentesque nec nam aliquam sem et tortor consequat id. Nulla malesuada pellentesque elit eget.
