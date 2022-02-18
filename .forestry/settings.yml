@@ -7,6 +7,11 @@ sections:
 - type: heading
   label: Content
 - type: directory
+  path: _sessions
+  label: Sessions
+  create: all
+  match: "**/*"
+- type: directory
   path: _page-sections
   label: Page Sections
   create: documents
