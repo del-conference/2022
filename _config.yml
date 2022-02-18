@@ -1,13 +1,13 @@
-title: Thriving Agricultural Systems in Urbanized Landscapes
+title: Digitally Engaged Learning Conference 2022
 # Versioning
 current_version: 1.5.0
 foundation_version: 6.0.0
 future: true
 
 social:
-  email: agsciences@psu.edu
-  facebook: agsciences
-  twitter: agsciences
+  email:
+  facebook:
+  twitter: DELconference
 
 # Dependencies
 markdown: kramdown
@@ -29,19 +29,19 @@ permalink: pretty
 # destination:        ./static
 
 port: 9002
-url: http://www.thrivingagsystems.org # the base hostname & protocol for your site
+url:  # the base hostname & protocol for your site
 baseurl: ""
-repository: thrivingagsystems/thrivingagsystems
+repository: del-conference/2022
 # exclude this stuff when building the static site
 exclude: [".gitignore", "README.md", "Gemfile", "Gemfile.lock", "vendor/bundle"]
 
 ## CUSTOM VARS
 
 #ga_id:             ##-########-###
-site_name: Thriving Agricultural Systems in Urbanized Landscapes
+site_name: Digitally Engaged Learning Conference 2022
 site_description:
-site_copyright: Copyright (c) 2020
-site_url: http://www.thrivingagsystems.org
+site_copyright: Copyright (c) 2022
+site_url: https://del-conference.github.io/2022/
 site_email:
 site_phone:
 
@@ -82,28 +82,3 @@ collections:
     output: false
   stakeholder-groups:
     output: false
-  #  _   _     __      _______ _____       _______ _____ ____  _   _
-  # | \ | |   /\ \    / /_   _/ ____|   /w\|__   __|_   _/ __ \| \ | |
-  # |  \| |  /  \ \  / /  | || |  __   /  \  | |    | || |  | |  \| |
-  # | . ` | / /\ \ \/ /   | || | |_ | / /\ \ | |    | || |  | | . ` |
-  # | |\  |/ ____ \  /   _| || |__| |/ ____ \| |   _| || |__| | |\  |
-  # |_| \_/_/    \_\/   |_____\_____/_/    \_\_|  |_____\____/|_| \_|
-
-#Navigation
-menuitems:
-  - url: /
-    title: Home
-  - url: /programs/
-    title: Programs
-  - url: /events/
-    title: Events
-  - url: /industry-career/
-    title: Industry & Career
-  - url: /education/
-    title: Education
-  - url: /community/
-    title: Community
-  # - url: /team/
-  #   title: Team
-  - url: /about/
-    title: About

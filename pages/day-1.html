@@ -1,0 +1,47 @@
+---
+layout: single-column-wide
+title: Day 1
+enable-banner: true
+enable-header: true
+permalink: "/day-1/"
+page-sections: []
+image:
+
+---
+{% assign items = site.news-activities | sort: 'date_added' | reverse %}
+{% for item in items %}
+<div class="row head-spacing foot-spacing">
+	
+	{% if item.enable-image == true and item.image != empty and item.image != null and item.image != '' %}
+	
+	
+	<div class="column small-12 medium-4 center">
+		<a alt="{{item.title}}" href="{{site.baseurl}}{{item.url}}" ><img class="center-align"  src="{{site.baseurl}}/{{ item.image }}" width="200" /></a>
+	</div>
+	<div class="column small-12 medium-8">
+		<h3 class="show-for-medium">{{ item.title }}</h3>
+		<h3 class="show-for-small-only center-align">{{ item.title }}</h3>
+		<p> {{ item.event-date }}</p>
+		<p> {{ item.description  }}</p>
+		{% if item.enable-button-link == true %}
+		<a alt="{{item.title}}" href="{{site.baseurl}}{{item.url}}" >Read more</a>
+		{% endif%}
+	</div>
+	
+
+	
+	{% else %}
+
+	<div class="column small-12 medium-12">
+		<h3 class="show-for-medium">{{ item.title }}</h3>
+		<h3 class="show-for-small-only center-align">{{ item.title }}</h3>
+		<p> {{ item.event-date }}</p>
+		<p> {{ item.description  }}</p>
+		<a alt="{{item.title}}" href="{{site.baseurl}}{{item.url}}" >Read more</a>
+	</div>
+
+	{% endif %}
+
+</div>
+<hr>
+{% endfor %}
