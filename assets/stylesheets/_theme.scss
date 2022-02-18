@@ -127,7 +127,7 @@ $color-body-background:#434749;
 
 
 h1, h2, h3, h4, h5, h6{
-	font-weight: 200;
+	font-weight: 700;
 	font-family: $open-sans;
 	color: $heading-color;
 	text-transform: uppercase;
@@ -154,7 +154,7 @@ h1, h2, h3, h4, h5, h6{
 	}
 }
 h3 {
-	text-transform: none;
+	
 	color: $color-text-header;
 	a {
 		font-weight: 700;
