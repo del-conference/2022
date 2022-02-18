@@ -17,6 +17,7 @@ layout: page
   <h3 class="show-for-medium title">{{ page.title }}</h3>
   <h3 class="show-for-small-only center-align title">{{ page.title }}</h3>
   <p> {{ page.event-date }}</p>
+  <p> {{ page.event-time }}</p>
       <p> {{ page.content  }}</p>
       {% if page.enable-button-link == true %}
           <a href="{{ page.button-url }}" class="button radius">{{ page.button-text }}</a>
@@ -31,6 +32,7 @@ layout: page
   <h3 class="show-for-medium">{{ page.title }}</h3>
   <h3 class="show-for-small-only center-align">{{ page.title }}</h3>
   <p> {{ page.event-date }}</p>
+  <p> {{ page.event-time }}</p>
       <p> {{ page.content  }}</p>
       {% if page.enable-button-link == true %}
           <a href="{{ page.button-url }}" class="button radius">{{ page.button-text }}</a>
