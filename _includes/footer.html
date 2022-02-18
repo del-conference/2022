@@ -20,9 +20,9 @@
 			
 				{% for section in site.layout-sections  %}
 					{% if section.slug == "footer-content" %}
-					<hr>	
-					<p>{{ section.project-sponsor-description }}</p>
-					<span class="center-align project-sponsor-logo"><img src="{{site.baseurl}}/{{ section.project-sponsor-logo }}"></span>
+					<!-- <hr>	 -->
+					<!-- <p>{{ section.project-sponsor-description }}</p>
+					<span class="center-align project-sponsor-logo"><img src="{{site.baseurl}}/{{ section.project-sponsor-logo }}"></span> -->
 					{% endif %}
 				{% endfor %}
 				<hr>
@@ -32,8 +32,8 @@
 			{{ section.tracking-code}}
 		{% endif %}
 	{% endfor %}
-	<div class="column small-12"><p class="center-align">Copyright {{ site.title 2017 }} – {{ 'now' | date: "%Y" }}</p></div>
-	<div class="column small-12"><p class="center-align"><a href="{{site.baseurl}}/graphics/">Graphic Assets</a></p></div>
+	<div class="column small-12"><p class="center-align">Copyright {{ site.title }}</p></div>
+	<!-- <div class="column small-12"><p class="center-align"><a href="{{site.baseurl}}/graphics/">Graphic Assets</a></p></div> -->
 </div>
 
 
