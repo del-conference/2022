@@ -1,0 +1,46 @@
+---
+label: session
+hide_body: true
+fields:
+- type: text
+  name: layout
+  label: layout
+- type: number
+  name: day
+  label: day
+- type: boolean
+  name: breadcrumbs
+  label: breadcrumbs
+- type: boolean
+  name: enable-featured-card
+  label: enable-featured-card
+- type: text
+  name: enable-header
+  label: enable-header
+- type: text
+  name: title
+  label: title
+- type: boolean
+  name: enable-image
+  label: enable-image
+- type: text
+  name: image
+  label: image
+- type: text
+  name: event-date
+  label: event-date
+- type: text
+  name: description
+  label: description
+- type: boolean
+  name: enable-button-link
+  label: enable-button-link
+- type: text
+  name: button-text
+  label: button-text
+- type: text
+  name: button-url
+  label: button-url
+- type: datetime
+  name: date_added
+  label: date_added
