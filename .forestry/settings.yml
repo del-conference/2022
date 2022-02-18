@@ -75,24 +75,6 @@ sections:
 - type: document
   path: pages/project-overview.html
   label: About Project Overview
-- type: document
-  path: pages/project-objectives.html
-  label: About Project Objectives
-- type: document
-  path: pages/stakeholder-advisory-board.html
-  label: About Stakeholder Adv. Board
-- type: document
-  path: pages/outreach-engagement.html
-  label: Outreach / Engagement
-- type: document
-  path: pages/research.html
-  label: Research
-- type: document
-  path: pages/education.html
-  label: Education
-- type: document
-  path: pages/news-and-activities.html
-  label: News and Activities
 - type: heading
   label: Site Configuration
 - type: document
