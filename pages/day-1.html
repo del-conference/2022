@@ -1,7 +1,7 @@
 ---
 layout: single-column-wide
 title: Day 1
-enable-banner: true
+enable-banner: false
 enable-header: true
 permalink: "/day-1/"
 page-sections: []
@@ -23,7 +23,7 @@ image: ''
 		<h3 class="show-for-small-only center-align">{{ item.title }}</h3>
 		<p> {{ item.event-date }}</p>
 		<p> {{ item.event-time }}</p>
-		<p> {{ item.description  }}</p>
+		<p> {{ item.content  }}</p>
 		{% if item.enable-button-link == true %}
 		<a alt="{{item.title}}" href="{{site.baseurl}}{{item.url}}" >Details</a>
 		{% endif%}
@@ -38,7 +38,7 @@ image: ''
 		<h3 class="show-for-small-only center-align">{{ item.title }}</h3>
 		<p> {{ item.event-date }}</p>
 		<p> {{ item.event-time }}</p>
-		<p> {{ item.description  }}</p>
+		<p> {{ item.content  }}</p>
 		<a alt="{{item.title}}" href="{{site.baseurl}}{{item.url}}" >Read more</a>
 	</div>
 
