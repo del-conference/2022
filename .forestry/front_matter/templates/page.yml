@@ -9,6 +9,9 @@ fields:
   hidden: true
   default: single-column-wide
 - type: text
+  name: image
+  label: image
+- type: text
   name: title
   label: title
 - type: boolean
@@ -23,6 +26,3 @@ fields:
 - type: list
   name: page-sections
   label: page-sections
-- type: text
-  name: image
-  label: image
