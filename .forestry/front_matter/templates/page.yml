@@ -1,0 +1,38 @@
+---
+label: Page
+hide_body: true
+display_field: title
+fields:
+- type: text
+  name: layout
+  label: layout
+  hidden: true
+  default: single-column-wide
+- type: text
+  name: title
+  label: title
+- type: boolean
+  name: enable-header
+  label: enable-header
+- type: boolean
+  name: enable-banner
+  label: enable-banner
+- name: image
+  type: file
+  config:
+    maxSize: 64
+  label: Image
+  showOnly:
+    field: enable-banner
+    value: true
+- type: text
+  name: permalink
+  label: permalink
+- type: list
+  name: page-sections
+  label: page-sections
+pages:
+- pages/conference.html
+- pages/day-1.html
+- pages/day-2.html
+- pages/support.html
