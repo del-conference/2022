@@ -81,3 +81,5 @@ fields:
   showOnly:
     field: enable-button-link
     value: true
+pages:
+- _sessions/example-session-day2.md
