@@ -33,6 +33,22 @@ sections:
   path: index.html
   label: Home Page
 - type: document
+  path: pages/conference.html
+  label: Conference
+  match: "**/*"
+- type: document
+  path: pages/day-1.html
+  label: Day 1
+  match: "**/*"
+- type: document
+  path: pages/day-2.html
+  label: Day 2
+  match: "**/*"
+- type: document
+  path: pages/support.html
+  label: Support
+  match: "**/*"
+- type: document
   path: pages/project-overview.html
   label: About Project Overview
 - type: heading
