@@ -12,5 +12,4 @@ fields:
   label: title
   description: This is displayed only in the CMS, not on the page.
 pages:
-- _page-sections/about-page.md
 - _page-sections/about-the-project.md
