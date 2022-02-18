@@ -1,0 +1,25 @@
+---
+label: Page
+hide_body: true
+fields:
+- type: text
+  name: layout
+  label: layout
+- type: text
+  name: title
+  label: title
+- type: boolean
+  name: enable-banner
+  label: enable-banner
+- type: boolean
+  name: enable-header
+  label: enable-header
+- type: text
+  name: permalink
+  label: permalink
+- type: list
+  name: page-sections
+  label: page-sections
+- type: text
+  name: image
+  label: image
