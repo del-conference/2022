@@ -44,9 +44,6 @@ sections:
 - type: document
   path: pages/support.html
   label: Support
-- type: document
-  path: pages/project-overview.html
-  label: About Project Overview
 - type: heading
   label: Site Configuration
 - type: document
