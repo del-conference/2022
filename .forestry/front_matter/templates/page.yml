@@ -11,21 +11,6 @@ fields:
 - type: text
   name: title
   label: title
-- name: day
-  type: select
-  default: '1'
-  config:
-    required: false
-    options:
-    - '1'
-    - '2'
-    source:
-      type: simple
-      section: 
-      file: 
-      path: 
-  label: day
-  description: Indicate the day in which the session is taking place.
 - type: boolean
   name: enable-header
   label: enable-header
