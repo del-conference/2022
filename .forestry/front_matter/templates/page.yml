@@ -28,3 +28,4 @@ fields:
   label: page-sections
 pages:
 - pages/conference.html
+- pages/day-1.html
