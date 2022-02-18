@@ -9,6 +9,7 @@
 			
 			{% for section in site.layout-sections  %}
 				{% if section.slug == "footer-content" %}
+				<span class="center-align project-lead-text">Hosted By:</span>
 				<span class="center-align project-lead-logo"><img src="{{site.baseurl}}/{{ section.project-lead-logo }}"></span>
 				{% endif %}
 			{% endfor %}
