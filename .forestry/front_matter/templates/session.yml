@@ -5,30 +5,64 @@ fields:
 - type: text
   name: layout
   label: layout
-- type: number
-  name: day
-  label: day
+  default: session
+  hidden: true
 - type: boolean
   name: breadcrumbs
   label: breadcrumbs
-- type: boolean
-  name: enable-featured-card
-  label: enable-featured-card
-- type: text
-  name: enable-header
-  label: enable-header
-- type: text
-  name: title
-  label: title
-- type: boolean
-  name: enable-image
-  label: enable-image
-- type: text
-  name: image
-  label: image
+  hidden: true
+  default: true
+- type: datetime
+  name: date_added
+  label: date_added
 - type: text
   name: event-date
   label: event-date
+- type: number
+  name: day
+  label: day
+- name: event-time
+  type: select
+  default: []
+  config:
+    required: false
+    options:
+    - 8am-9am
+    - 9am-10am
+    - 10am-11am
+    - 11am-12pm
+    - 12pm-1pm
+    - 1pm-2pm
+    - 2pm-3pm
+    - 3pm-4pm
+    - 4pm-5pm
+    source:
+      type: simple
+      section: 
+      file: 
+      path: 
+  label: event-time
+- type: text
+  name: title
+  label: title
+- name: enable-header
+  type: boolean
+  label: enable-header
+  default: true
+- type: boolean
+  name: enable-featured-card
+  label: enable-featured-card
+- type: boolean
+  name: enable-image
+  label: enable-image
+- name: image
+  type: file
+  config:
+    maxSize: 64
+  label: image
+  showOnly:
+    field: enable-image
+    value: true
 - type: text
   name: description
   label: description
@@ -38,9 +72,12 @@ fields:
 - type: text
   name: button-text
   label: button-text
+  showOnly:
+    field: enable-button-link
+    value: true
 - type: text
   name: button-url
   label: button-url
-- type: datetime
-  name: date_added
-  label: date_added
+  showOnly:
+    field: enable-button-link
+    value: true
