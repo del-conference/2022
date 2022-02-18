@@ -91,3 +91,4 @@ fields:
     value: true
 pages:
 - _sessions/example-session-day2.md
+- _sessions/example-session.md
