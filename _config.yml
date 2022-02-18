@@ -82,3 +82,6 @@ collections:
     output: false
   stakeholder-groups:
     output: false
+  #DEL
+  sessions:
+    output: true

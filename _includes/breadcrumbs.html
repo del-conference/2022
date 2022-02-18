@@ -1,5 +1,5 @@
 <div class="row expanded border-bottom-gray small-padding-top">
     <div class="columns">
-    <p> <a href="/{{ page.collection }}/">{{ page.collection | split: "-" | join: " & " | upcase}}</a> / {{page.title | upcase}}</p>
+    <p> <a href="{{site.baseurl}}/{{ page.day | prepend: "day-" }}/">{{ page.day | prepend: "day-" | upcase }}</a> / {{page.title | upcase}}</p>
     </div>
 </div>
