@@ -12,15 +12,25 @@ fields:
   label: breadcrumbs
   hidden: true
   default: true
+- type: text
+  name: title
+  label: title
 - type: datetime
   name: date_added
   label: date_added
-- type: text
-  name: event-date
-  label: event-date
+  default: now
 - type: number
   name: day
   label: day
+- name: event-date
+  type: datetime
+  label: event-date
+  description: ''
+  config:
+    required: false
+    date_format: 
+    time_format: 
+    display_utc: false
 - name: event-time
   type: select
   default: []
@@ -42,9 +52,6 @@ fields:
       file: 
       path: 
   label: event-time
-- type: text
-  name: title
-  label: title
 - name: enable-header
   type: boolean
   label: enable-header
