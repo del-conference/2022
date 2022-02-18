@@ -4,18 +4,10 @@ title: Home Page Content
 heading: About the Project
 
 ---
-### Thriving Ag Project
+### Divides: Teaching, Bridging, Learning
 
-Welcome to the website for the Thriving Agricultural Systems in Urbanized Landscapes project! This 5-year, $9 million project funded by USDA’s National Institute of Food and Agriculture (NIFA) is working to create economically thriving and environmentally beneficial agricultural systems in urbanized landscapes. These agricultural systems are located in metropolitan counties and in non-metropolitan counties adjacent to metro areas, and are vital to the sustainability of U.S. agriculture. Over 60% of U.S. net farm income comes from these urbanized landscapes.
+Post-pandemic art and design education has asserted a radically digital architecture of online and hyflex spaces of learning. These trends were not unanticipated. The DEL community has long developed strategies, innovations, and engaged practices in teaching creative practice in relation to digital progressions. What appears different in this moment is the sheer volume and pace of adoption. Our extreme conditions have conjured a pressure cooker of digital effects to teaching and learning that have irrevocably changed modes of delivery and architectures of learning in higher education.
 
-#### The Project Story
+While these rapid adoptions suggest a new normal, persistent and tenacious divides continue to hamper access and equity in digitally engaged learning. Digital divides, a central discourse within digital education scholarship for over 25 years, remain a threat to the vitality of our teaching and learning communities. How might art and design education advance access, equity, and inclusion within these digital spaces? How do priorities and premiums of learning architectures, both physical and digital, codify contested zones of privilege and access to innovation in digitally engaged learning? What practices and processes for inclusive teaching and culturally responsive pedagogy may forge new paradigms of participation and empowerment in learning?
 
-A sustainable and economically viable agriculture is essential for the future of our environment and quality of life. Support for functional, healthy ecosystems and profitable farming is necessary for this future.
-
-The Thriving Agricultural Systems in Urbanized Landscapes project aims to achieve an economically and environmentally sustainable agriculture in urbanized landscapes over the next 25 years. The Chesapeake Bay watershed is being used as a case study for the project, with research findings that are translatable to other urbanized landscapes. A team of researchers from Penn State, the University of Maryland, Virginia Tech, Ohio State, Utah State, and the Stroud Water Research Center is working to achieve these goals with input from key stakeholders who are part of the agricultural and environmental communities. Together, the team is dedicated to creating economically thriving and environmentally beneficial agricultural systems in urbanized landscapes.
-
-#### Contact Us
-
-**Project Director:** Dave Abler, dga2@psu.edu
-
-**Project Manager:** Maggie Frederick, mas960@psu.edu
+We are in the midst of rapid change to the point of its realization being a manifestation beyond our imaginations. Many digitally engaged art and design teachers have foretold of this change, but its massive and rapid adoption has eclipsed even our notions. How do we remain aware within moments of transformation of transformative change? What techniques of reflexive bridging allow art and design practitioners and teachers capacity to elevate learning beyond modes of efficiency? How does student research and learning within these rapid adoptions sustain modalities of care, ethics, and exploration within barriers erected by institutional framing?
