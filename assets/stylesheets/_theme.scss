@@ -113,43 +113,65 @@ $orange:#F7941E;
   }
 
 
-$main-accent-color:#A80532;
+$main-accent-color:#81e9e6;
 $heading-color:#fff;
 $menu-dropdown-bg:rgba(29,143,0,0.9);
 $text-heading-color:rgb(39, 39, 39);
+
+$color-text-p:#cccccc;
+$color-text-link:#81e9e6;
+$color-text-link--hover:#ffffff;
+$color-text-highlight:#e6fffe;
+$color-text-header:#dcdcdc;
+$color-body-background:#434749;
 
 h1, h2, h3, h4, h5, h6{
 	font-weight: 200;
 	font-family: $open-sans;
 	color: $heading-color;
 	text-transform: uppercase;
-	color: $text-heading-color;
+	color: $color-text-header;
 	&.title {
 		font-weight: 700;
 
 		a {
 			font-weight: 700;
 			text-decoration: underline;
+			color:$color-text-link;
+		}
+		a:hover {
+			color:$color-text-link--hover;
 		}
 	}
 	a {
 		text-decoration: underline;
+		color:$color-text-link;
 		
+	}
+	a:hover {
+		color:$color-text-link--hover;
 	}
 }
 h3 {
 	text-transform: none;
-	color: #333;
+	color: $color-text-header;
 	a {
 		font-weight: 700;
+		color:$color-text-link;
+	}
+	a:hover {
+		color:$color-text-link--hover;
 	}
 }
 p {
 	font-weight: 300;
 	a {
 		font-weight: 500;
-		color: $main-accent-color;
+		color:$color-text-link;
 		text-decoration: underline;
+	}
+	a:hover {
+		color:$color-text-link--hover;
 	}
 }
 strong {
@@ -204,12 +226,14 @@ h3{
 }
 body {
 	font-family: $roboto;
-	background:#e9ecef;
+	background:$color-body-background;
+	color: $color-text-p;
 }
 a {
-	color:#000;
+	color:$color-text-link;
 	&:hover {
 		text-decoration: underline;
+		color: $color-text-link--hover;
 	}
 }
 a.disabled {
@@ -226,7 +250,7 @@ span.highlight{
 	word-wrap: break-word;
 	padding: 0 0.5rem;
 	text-transform: uppercase;
-	background:#000;
+	background:$color-text-highlight;
 	&.black {
 		background:#212121;
 	}
