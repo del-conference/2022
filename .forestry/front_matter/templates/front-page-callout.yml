@@ -1,0 +1,32 @@
+---
+label: Front Page Callout
+hide_body: true
+fields:
+- type: boolean
+  name: enabled
+  label: Enable Callout
+  default: true
+  hidden: false
+- type: text
+  name: title
+  label: title
+- type: textarea
+  name: text
+  label: text
+- type: boolean
+  name: enable-button
+  label: enable-button
+- type: text
+  name: button-text
+  label: button-text
+  showOnly:
+    field: enable-button
+    value: true
+- type: text
+  name: button-url
+  label: button-url
+  showOnly:
+    field: enable-button
+    value: true
+pages:
+- _front-page-callouts/new-outreach-project.md

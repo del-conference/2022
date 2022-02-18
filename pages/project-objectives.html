@@ -1,0 +1,19 @@
+---
+layout: single-column-wide
+title: Project Team
+enable-banner: true
+enable-header: true
+permalink: "/about/project-team/"
+page-sections:
+- _page-sections/project-objectives.md
+image: assets/img/img_20200122_084424.jpg
+
+---
+{% assign teams = site.objective-teams | sort: "page-order" %}
+{% for team in teams %}
+<h2>{{team.title}}</h2>
+<p>{{ team.description}}</p>
+    {% assign people_array = team.associated-people %}
+    {% include associated-people.html custom_array=true array=people_array display-card=true display-raw=false name=true image=true professional-title=true email=true link-to-bio-page=true link-to-personal-website=true linkedin=true twitter=true facebook=true instagram=true %}
+    
+{% endfor %}

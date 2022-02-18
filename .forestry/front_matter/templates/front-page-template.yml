@@ -1,0 +1,68 @@
+---
+label: Front Page Template
+hide_body: true
+fields:
+- type: text
+  name: layout
+  label: layout
+  hidden: true
+- type: text
+  name: title
+  label: title
+  hidden: true
+- type: boolean
+  name: enable-default-header
+  label: Enable Fixed Front Page Banner Image
+  description: A banner image will appear on the front page. This does not inlcude
+    the featured banner carousel.
+- name: page-header-image
+  type: file
+  config:
+    maxSize: 2
+  label: Page Header Image
+  description: Use this image compression tool to make image between 500KB and 1MB.
+    <a href="https://www.adobe.com/photoshop/online/compress-image.html" title="https://www.adobe.com/photoshop/online/compress-image.html"
+    target="_blank">https://www.adobe.com/photoshop/online/compress-image.html</a>
+  showOnly:
+    field: enable-default-header
+    value: true
+- type: text
+  name: text-heading
+  label: Text Heading
+- type: boolean
+  name: twitter-feed
+  label: Enable Twitter Feed
+  description: Twitter feed.
+- type: text
+  name: twitter-account
+  label: Twitter account
+  description: 'Which Twitter account to show: IE - ''agsciences''. Don''t inlcude
+    the ''@''.'
+  showOnly:
+    field: twitter-feed
+    value: true
+  default: true
+- type: boolean
+  name: enable-callouts
+  label: Enable Announcements
+  description: You can add and edit callouts in the content section called "Home Page
+    Announcements."
+- type: boolean
+  name: enable-featured-events
+  label: Enable Featured Event Cards
+  description: If an event has the featured card toggle enabled, then it will automatically
+    show up on the front page. You can disable all featured events with this toggle.
+  hidden: true
+- type: boolean
+  name: enable-featured-banner-carousel
+  label: Enable Featured Banner Carousel
+  description: If an event has the featured card toggle enabled, then it will automatically
+    show up on the front page. You can disable all featured events with this toggle.
+  hidden: true
+- name: page-section
+  type: include
+  config: {}
+  template: page-sections
+  label: Page Section
+pages:
+- index.html

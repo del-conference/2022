@@ -1,0 +1,24 @@
+---
+label: Stakeholder Group
+hide_body: true
+display_field: title
+fields:
+- type: text
+  name: title
+  label: title
+- type: text
+  name: description
+  label: description
+- type: list
+  name: associated-people
+  label: associated-people
+  config:
+    use_select: true
+    source:
+      type: pages
+      section: people
+- type: number
+  name: page-order
+  label: page-order
+pages:
+- _stakeholder-groups/stakeholder-group-1.md

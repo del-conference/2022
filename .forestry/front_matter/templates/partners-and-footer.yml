@@ -1,0 +1,103 @@
+---
+label: Partners
+hide_body: true
+fields:
+- name: project-lead-logo
+  type: file
+  config:
+    maxSize: 2
+  label: Project Lead Logo
+  description: Use this image compression tool to make image between 300KB and 800KB.
+    <a href="https://www.adobe.com/photoshop/online/compress-image.html" title="https://www.adobe.com/photoshop/online/compress-image.html"
+    target="_blank">https://www.adobe.com/photoshop/online/compress-image.html</a>
+- name: project-lead-description
+  type: textarea
+  default: ''
+  config:
+    required: false
+    wysiwyg: false
+    schema:
+      format: markdown
+  label: Project Lead Description
+- name: project-lead-link
+  type: text
+  config:
+    required: false
+  label: Project Lead Link
+- name: partner
+  type: field_group_list
+  fields:
+  - name: name
+    type: text
+    config:
+      required: false
+    label: Name
+  - name: image
+    type: file
+    config:
+      maxSize: 1
+    label: Image
+    description: Use this image compression tool to make image between 300KB and 800KB.
+      <a href="https://www.adobe.com/photoshop/online/compress-image.html" title="https://www.adobe.com/photoshop/online/compress-image.html"
+      target="_blank">https://www.adobe.com/photoshop/online/compress-image.html</a>
+  - name: enable-image-link
+    type: boolean
+    label: Enable Image Link
+  - name: url
+    type: text
+    config:
+      required: false
+    label: url
+    showOnly:
+      field: enable-image-link
+      value: true
+  config:
+    min: 
+    max: 
+    labelField: name
+  label: Partners
+  description: Add an image and link to partnering institutions.
+- name: project-sponsor-logo
+  type: file
+  config:
+    maxSize: 1
+  label: Project Sponsor Logo
+  description: Use this image compression tool to make image between 300KB and 800KB.
+    <a href="https://www.adobe.com/photoshop/online/compress-image.html" title="https://www.adobe.com/photoshop/online/compress-image.html"
+    target="_blank">https://www.adobe.com/photoshop/online/compress-image.html</a>
+- name: project-sponsor-description
+  type: textarea
+  default: ''
+  config:
+    required: false
+    wysiwyg: false
+    schema:
+      format: markdown
+  label: Project Sponsor Description
+- name: project-sponsor-link
+  type: text
+  config:
+    required: false
+  label: Project Sponsor Link
+- name: description
+  type: textarea
+  default: ''
+  config:
+    required: false
+    wysiwyg: true
+    schema:
+      format: html-blocks
+  label: Footer Text
+  description: Add text here to display in the footer above the copyright notice.
+- name: tracking-code
+  type: textarea
+  default: ''
+  config:
+    required: false
+    wysiwyg: false
+    schema:
+      format: html-blocks
+  label: Tracking Code
+  description: Paste Tracking Code Here
+pages:
+- _layout-sections/footer-content.md

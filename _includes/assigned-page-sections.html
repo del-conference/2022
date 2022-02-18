@@ -1,0 +1,13 @@
+{% if page.page-sections != empty and page.page-sections != '' and page.page-sections != null %}
+    {% assign site-sections = site.page-sections %}
+    {% assign assigned-sections = page.page-sections %}
+    {% for assigned-section in assigned-sections %}
+        {% for site-section in site-sections %}
+            {% if  assigned-section == site-section.relative_path  %}
+                <div class="{{ site-section.title | slugify }} page-section">
+                {{ site-section.content }}
+                </div>
+            {% endif %}
+        {% endfor %}
+    {% endfor %}
+{% endif %}

@@ -1,0 +1,39 @@
+<!-- FOOTER ROW -->
+<div class="row expanded social-icons-row">
+{% include social-icons.html %}
+</div>
+<div class="row expanded footer">
+	{% for section in site.layout-sections  %}
+		{% if section.slug == "footer-content" %}	
+		<div class="column small-12"><span class="center-align">
+			
+			{% for section in site.layout-sections  %}
+				{% if section.slug == "footer-content" %}
+				<span class="center-align project-lead-logo"><img src="{{site.baseurl}}/{{ section.project-lead-logo }}"></span>
+				{% endif %}
+			{% endfor %}
+			<hr>
+		
+		</div>
+			<div class="column small-10 small-centered medium-10 large-9 partner-logos">{% include partners.html %}</div>
+			<div class="column small-12">
+			
+				{% for section in site.layout-sections  %}
+					{% if section.slug == "footer-content" %}
+					<hr>	
+					<p>{{ section.project-sponsor-description }}</p>
+					<span class="center-align project-sponsor-logo"><img src="{{site.baseurl}}/{{ section.project-sponsor-logo }}"></span>
+					{% endif %}
+				{% endfor %}
+				<hr>
+
+			</div>
+			<div class="column small-12"><span class="center-align">{{ section.description}}</span></div>
+			{{ section.tracking-code}}
+		{% endif %}
+	{% endfor %}
+	<div class="column small-12"><p class="center-align">Copyright {{ site.title 2017 }} – {{ 'now' | date: "%Y" }}</p></div>
+	<div class="column small-12"><p class="center-align"><a href="{{site.baseurl}}/graphics/">Graphic Assets</a></p></div>
+</div>
+
+

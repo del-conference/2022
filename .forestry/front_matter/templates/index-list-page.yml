@@ -1,0 +1,40 @@
+---
+label: Index List Page
+hide_body: false
+display_field: title
+fields:
+- type: text
+  name: layout
+  label: layout
+  default: index-list
+  hidden: true
+- type: text
+  name: title
+  label: title
+- type: boolean
+  name: enable-header
+  label: enable-header
+  default: true
+  hidden: true
+- type: boolean
+  name: enable-banner
+  label: enable-banner
+- name: image
+  type: file
+  config:
+    maxSize: 1
+  label: Banner Image
+  showOnly:
+    field: enable-banner
+    value: true
+  description: Use this image compression tool to make image between 300KB and 800KB.
+    <a href="https://www.adobe.com/photoshop/online/compress-image.html" title="https://www.adobe.com/photoshop/online/compress-image.html"
+    target="_blank">https://www.adobe.com/photoshop/online/compress-image.html</a>
+- type: text
+  name: permalink
+  label: permalink
+- name: page-section
+  type: include
+  config: {}
+  template: page-sections
+  label: Page Section

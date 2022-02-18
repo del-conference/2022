@@ -1,0 +1,94 @@
+---
+label: News / Activity
+hide_body: true
+fields:
+- type: text
+  name: layout
+  label: layout
+  default: news-activity
+  hidden: true
+- type: text
+  name: enable-header
+  label: enable-header
+  default: false
+  hidden: true
+- name: breadcrumbs
+  type: boolean
+  label: Enable Breadcrumbs
+  hidden: true
+  default: true
+- type: text
+  name: title
+  label: title
+- name: enable-featured-card
+  type: boolean
+  label: Enable on Front Page
+  default: true
+  description: Disable if you don't want this to show on the home page.
+- type: boolean
+  name: enable-image
+  label: enable-image
+- name: image
+  type: file
+  config:
+    maxSize: 1
+  label: Image
+  showOnly:
+    field: enable-image
+    value: true
+  description: Use this image compression tool to make image between 300KB and 800KB.
+    <a href="https://www.adobe.com/photoshop/online/compress-image.html" title="https://www.adobe.com/photoshop/online/compress-image.html"
+    target="_blank">https://www.adobe.com/photoshop/online/compress-image.html</a>
+- type: datetime
+  name: event-date
+  label: event-date
+- type: textarea
+  name: description
+  label: description
+  config:
+    wysiwyg: true
+    schema:
+      format: html-blocks
+- type: boolean
+  name: enable-button-link
+  label: enable-button-link
+- type: text
+  name: button-text
+  label: button-text
+  showOnly:
+    field: enable-button-link
+    value: true
+- type: text
+  name: button-url
+  label: button-url
+  showOnly:
+    field: enable-button-link
+    value: true
+- name: date_added
+  type: datetime
+  label: Date Added
+  description: This will typically be the date that this item is added to the site.
+    This helps determine the order of appearance in the news and activities list page.
+    Recent dates will render at the top of the list.
+  config:
+    required: false
+    date_format: 
+    time_format: 
+    display_utc: false
+pages:
+- _news-activities/blockchain-technology-pa-produce-and-the-digital-economy.md
+- _news-activities/chesapeake-bay-watershed-residents-views-on-agriculture-and-water-quality.md
+- _news-activities/march-2021-all-hands-thriving-ag-project-meeting.md
+- _news-activities/maryland-field-sites-tour-connects-team-members-from-related-projects.md
+- _news-activities/news-item-1.md
+- _news-activities/news-item-2.md
+- _news-activities/researchers-develop-a-smart-phone-app-to-facilitate-collaborative-data-collection-about-technical-assistance-providers-farm-visits.md
+- _news-activities/soil-themed-youth-program-to-be-held-at-penn-state-s-arboretum.md
+- _news-activities/thriving-ag-project-december-2021-quarterly-report.md
+- _news-activities/thriving-ag-project-march-2021-annual-progress-report.md
+- _news-activities/thriving-ag-project-quarterly-updates-july-2021.md
+- _news-activities/thriving-ag-project-researchers-study-how-cover-crop-management-might-affect-slug-activity.md
+- _news-activities/thriving-ag-project-to-be-a-named-partner-on-a-scientific-and-technical-advisory-committee-stac-workshop.md
+- _news-activities/thriving-ag-team-members-read-and-wainger-publish-in-peerj.md
+- _news-activities/understanding-the-effects-of-cover-crops-and-nutrient-management-on-microbial-carbon-use-efficiency-and-nitrogen-mineralization.md
+- _news-activities/university-of-maryland-s-news-article-on-the-thriving-ag-project.md

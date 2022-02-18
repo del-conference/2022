@@ -1,0 +1,124 @@
+---
+new_page_extension: md
+auto_deploy: false
+admin_path: "/admin/"
+webhook_url: 
+sections:
+- type: heading
+  label: Content
+- type: directory
+  path: _page-sections
+  label: Page Sections
+  create: documents
+  match: "**/*"
+  templates:
+  - page-section
+- type: directory
+  path: _people
+  label: People
+  create: documents
+  match: "**/*"
+  templates:
+  - person
+- type: directory
+  path: _news-activities
+  label: News and Activities
+  create: documents
+  match: "**/*"
+  templates:
+  - news-activity
+- type: directory
+  path: _research
+  label: Research Projects
+  create: documents
+  match: "**/*"
+  templates:
+  - research
+- type: directory
+  path: _outreach-engagement
+  label: Outreach Projects
+  create: documents
+  match: "**/*"
+  templates:
+  - outreach-project
+- type: directory
+  path: _objective-teams
+  label: Objective Teams
+  create: documents
+  match: "**/*"
+  templates:
+  - objective-team
+- type: directory
+  path: _stakeholder-groups
+  label: Stakeholder Groups
+  create: documents
+  match: "**/*"
+- type: directory
+  path: _courses
+  label: Courses
+  create: documents
+  match: "**/*"
+  templates:
+  - course
+- type: directory
+  path: _front-page-callouts
+  label: Home Page Announcements
+  create: documents
+  match: "**/*"
+  templates:
+  - front-page-callout
+- type: heading
+  label: Page configuration
+- type: document
+  path: index.html
+  label: Home Page
+- type: document
+  path: pages/project-overview.html
+  label: About Project Overview
+- type: document
+  path: pages/project-objectives.html
+  label: About Project Objectives
+- type: document
+  path: pages/stakeholder-advisory-board.html
+  label: About Stakeholder Adv. Board
+- type: document
+  path: pages/outreach-engagement.html
+  label: Outreach / Engagement
+- type: document
+  path: pages/research.html
+  label: Research
+- type: document
+  path: pages/education.html
+  label: Education
+- type: document
+  path: pages/news-and-activities.html
+  label: News and Activities
+- type: heading
+  label: Site Configuration
+- type: document
+  path: _data/navbar.yml
+  label: Site Menu
+- type: document
+  path: _data/social.yml
+  label: Social Media Accounts
+- type: document
+  path: pages/graphics.md
+  label: Graphic Assets
+- type: document
+  path: _layout-sections/footer-content.md
+  label: Partners and Footer Text
+upload_dir: assets/img
+public_path: assets/img
+front_matter_path: ''
+use_front_matter_path: false
+file_template: ":filename:"
+build:
+  preview_env:
+  - JEKYLL_ENV=staging
+  preview_output_directory: _site
+  install_dependencies_command: bundle install --path vendor/bundle
+  preview_docker_image: forestryio/ruby:2.6
+  mount_path: "/srv"
+  working_dir: "/srv"
+  instant_preview_command: bundle exec jekyll serve --drafts --unpublished --future
+    --port 8080 --host 0.0.0.0 -d _site

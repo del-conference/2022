@@ -1,0 +1,94 @@
+---
+layout: default
+---
+
+<!-- Learn about this code on MDN: https://developer.mozilla.org/en-US/docs/Web/CSS/mix-blend-mode -->
+
+{% include top-bar.html %}
+{% if page.enable-default-header == true %}
+<div class=" isolate {{page.title | slugify }}-banner" style="background: url('/{{ page.page-header-image }}') center center/cover no-repeat;">
+  <!-- TOP BAR -->
+    <div class="row header-content front-page-header">
+      {% if page.text-heading == '' or page.text-heading == empty or page.text-heading == null %}  
+      {% else %}
+      <div class="small-12 center columns">
+          <!-- <a class="right masthead" href="{{ site.baseurl }}/"><img class="logo" alt="Thriving Agrigulture Systems website logo" src="{{site.baseurl}}/assets/img/s3-logo-1.png"/></a> -->
+        <h2 class="header-attn-text">{{ page.text-heading}}</h2>
+        </div>
+      {% endif %}
+    </div>
+  </div>
+  {% endif %}
+  <!-- END HEADER -->
+  
+  <!-- ORBIT SLIDER -->
+
+  {% assign slider_items = site.events | reverse | where: "enable-featured-banner", "true"  %}
+  {% assign slider_size = slider_items | size  %}
+
+  {% if page.enable-featured-banner-carousel == true and slider_size > 0 %}
+    {% include orbit-slider.html slides=slider_items label="Featured Events" %}
+  {% endif %}
+  <div>
+    {% assign callouts = site.front-page-callouts | reverse | where: "enabled", true  %}
+    {% if page.enable-callouts == true and callouts.size > 0 %}
+        {% for callout in callouts %}
+            
+                {% capture callout_title %}{{callout.title}}{% endcapture %}
+                {% capture callout_text %}{{callout.text}}{% endcapture %}
+                {% capture callout_enable_button %}{{callout.enable-button}}{% endcapture %}
+                {% capture callout_button_text %}{{callout.button-text}}{% endcapture %}
+                {% capture callout_button_url %}{{callout.button-url}}{% endcapture %}
+                {% include front-page-callout.html callout_title=callout_title callout_text=callout_text callout_enable_button=callout_enable_button callout_button_text=callout_button_text callout_button_url=callout_button_url %}
+            
+        {% endfor %}
+    {% endif %}
+    {% assign content_columns = page.columns %}
+    {% assign featured_events = site.events | where: "enable-featured-card", true  %}
+    {% if page.enable-featured-events == true and featured_events.size > 0 %}
+    {% assign content_columns = 2 %}
+    {% endif %}
+
+    <div class="row">
+      
+      {% comment %}{% two column layout%}{% endcomment %}
+          <div class="small-12 medium-push-1 medium-6 large-push-1 large-5 columns head-spacing foot-spacing">
+  
+                {% include assigned-page-sections.html %}
+
+          </div>
+  
+          
+
+          <div class="small-12 medium-push-1 medium-4 large-push-2 large-4 columns head-spacing foot-spacing">
+            
+            
+
+            {% assign events = site.news-activities | sort: "date_added" | reverse %}
+            {% for event in events %}
+              {% if event.enable-featured-card == true %}
+                {% capture featured_title %}{{event.title}}{% endcapture %}
+                {% capture featured_text %}{{event.description | truncate: 20, '...' }}{% endcapture %}
+                {% capture featured_class %}{{event.class}}{% endcapture %}
+                {% capture featured_image %}{{event.image}}{% endcapture %}
+                {% capture featured_enable_image %}{{event.enable-image}}{% endcapture %}
+                {% capture featured_url %}{{event.url}}{% endcapture %}
+                {% include featured-card.html featured_class=featured_class featured_image=featured_image featured_enable_image=featured_enable_image featured_title=featured_title featured_text=featured_text featured_url=featured_url %}
+              
+              {% endif %}
+            {% endfor %}
+            {% if page.twitter-feed == true %}
+            <div class="tweet-box">
+              <a class="twitter-timeline" data-lang="en" data-height="640" data-dnt="true" href="https://twitter.com/{{ page.twitter-account }}">Tweets by {{ page.twitter-account }}</a> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+            </div>
+            {% endif %}
+            
+          </div>
+      
+
+      
+      
+    </div>
+  </div> 
+
+

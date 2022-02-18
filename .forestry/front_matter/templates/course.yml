@@ -1,0 +1,36 @@
+---
+label: Course
+hide_body: true
+display_field: title
+fields:
+- type: text
+  name: title
+  label: title
+- type: text
+  name: course-number
+  label: course-number
+- type: file
+  name: image
+  label: image
+  config:
+    maxSize: 1
+  description: Use this image compression tool to make image between 300KB and 800KB.
+    <a href="https://www.adobe.com/photoshop/online/compress-image.html" title="https://www.adobe.com/photoshop/online/compress-image.html"
+    target="_blank">https://www.adobe.com/photoshop/online/compress-image.html</a>
+- type: text
+  name: bulletin-link
+  label: bulletin-link
+- type: list
+  name: instructors
+  label: instructors
+- type: textarea
+  name: description
+  label: description
+pages:
+- _courses/food-supply-chains-and-covid-19.md
+- _courses/integrated-perspectives-in-human-dimensions-of-natural-resources-and-the-environment.md
+- _courses/legal-aspects-of-resource-management.md
+- _courses/nutrient-management-in-agricultural-systems.md
+- _courses/principles-of-soil-and-water-engineering.md
+- _courses/soil-and-environmental-quality.md
+- _courses/watershed-assessment-management-and-policy.md

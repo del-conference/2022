@@ -1,0 +1,16 @@
+{% assign sorted = (site.team | sort:'member-order') %}
+{% for member in sorted %}
+<div class="row team-member">    
+		<div class="small-12 medium-3 large-4 columns">
+        	<img class="profile-img" src="{{site.baseurl}}/{{ member.img }}" />
+      	</div>
+      	<div class="small-12 medium-9 large-8 columns">
+	        <h3>{{ member.name }}</h3>
+	        <p class="member-info">
+	        	{{ member.role }}<br>
+	        	{{ member.email }}
+	        </p>
+	        <p>{{ member.content }}</p>
+        </div>
+</div> 
+{% endfor %}

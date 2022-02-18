@@ -1,0 +1,101 @@
+---
+label: Outreach Project
+hide_body: false
+fields:
+- type: text
+  name: layout
+  label: layout
+  hidden: true
+  default: outreach-project
+- type: text
+  name: title
+  label: title
+- name: enable-header
+  type: boolean
+  label: Enable Header
+  hidden: true
+  default: false
+- name: breadcrumbs
+  type: boolean
+  label: Enable Breadcrumbs
+  hidden: true
+  default: true
+- name: enable-banner
+  type: boolean
+  label: Enable Banner
+  hidden: true
+- type: file
+  name: primary-image
+  label: primary image
+  description: Use this image compression tool to make image between 300KB and 800KB.
+    <a href="https://www.adobe.com/photoshop/online/compress-image.html" title="https://www.adobe.com/photoshop/online/compress-image.html"
+    target="_blank">https://www.adobe.com/photoshop/online/compress-image.html</a>
+  config:
+    maxSize: 1
+- type: field_group_list
+  name: image-gallery
+  label: image-gallery
+  fields:
+  - type: file
+    name: image
+    label: image
+    description: 'Use this image compression tool to make image between 300KB and
+      800KB: <a href="https://www.adobe.com/photoshop/online/compress-image.html"
+      title="https://www.adobe.com/photoshop/online/compress-image.html" target="_blank">https://www.adobe.com/photoshop/online/compress-image.html</a>'
+    config:
+      maxSize: 1
+  - type: text
+    name: alt-text
+    label: alt-text
+  - name: caption
+    type: text
+    config:
+      required: false
+    label: Caption
+- type: text
+  name: website
+  label: website
+- name: link-title
+  type: text
+  config:
+    required: false
+  label: Website Link Title
+- type: text
+  name: linkedin
+  label: linkedin
+- type: text
+  name: twitter
+  label: twitter
+- type: text
+  name: facebook
+  label: facebook
+- type: text
+  name: instagram
+  label: instagram
+- type: list
+  name: associated-project-leaders
+  label: Project Leaders
+  config:
+    use_select: true
+    source:
+      type: pages
+      section: people
+- type: list
+  name: associated-people
+  label: Project Team Members
+  config:
+    use_select: true
+    source:
+      type: pages
+      section: people
+- name: date-added
+  type: datetime
+  label: Date Added
+  description: ''
+  config:
+    required: false
+    date_format: 
+    time_format: 
+    display_utc: false
+pages:
+- _outreach-engagement/scenario-building-with-project-stakeholders.md

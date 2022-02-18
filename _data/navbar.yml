@@ -1,0 +1,37 @@
+---
+- name: Home
+  url_active: true
+  url: "/"
+  enable_sublinks: false
+  subfolderitems: []
+- name: About
+  url_active: false
+  url: "/about/"
+  enable_sublinks: true
+  subfolderitems:
+  - name: Project Overview
+    url: "/about/project-overview/"
+  - name: Project Team
+    url: "/about/project-team/"
+  - name: Stakeholder Advisory Board
+    url: "/about/stakeholder-advisory-board/"
+- name: Outreach & Engagement
+  url: "/outreach-engagement/"
+  url_active: true
+  enable_sublinks: false
+  subfolderitems: []
+- name: Research
+  url: "/research/"
+  url_active: true
+  enable_sublinks: false
+  subfolderitems: []
+- name: Education
+  url: "/education/"
+  url_active: true
+  enable_sublinks: false
+  subfolderitems: []
+- name: News & Activities
+  url: "/news-activities/"
+  url_active: true
+  enable_sublinks: true
+  subfolderitems: []

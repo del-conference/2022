@@ -1,0 +1,23 @@
+---
+label: Page section
+hide_body: false
+display_field: title
+fields:
+- type: boolean
+  name: enabled
+  label: enabled
+  default: true
+- type: text
+  name: title
+  label: title
+  description: This is displayed only in the CMS, not on the page.
+pages:
+- _page-sections/about-the-project.md
+- _page-sections/education.md
+- _page-sections/evaluations-and-reports-page-content.md
+- _page-sections/overview.md
+- _page-sections/project-objectives-1.md
+- _page-sections/project-objectives.md
+- _page-sections/project-overview-task-teams-table.md
+- _page-sections/second-page-section.md
+- _page-sections/stakeholder-adv.board.md

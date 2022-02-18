@@ -1,0 +1,53 @@
+---
+label: Page
+hide_body: true
+display_field: title
+fields:
+- type: text
+  name: layout
+  label: layout
+  default: single-column-wide
+  hidden: true
+- type: boolean
+  name: enable-header
+  label: enable-header
+  hidden: true
+  default: true
+- type: text
+  name: title
+  label: Title
+- type: boolean
+  name: enable-banner
+  label: Enable Banner
+- name: image
+  type: file
+  config:
+    maxSize: 1
+  label: Banner Image
+  showOnly:
+    field: enable-banner
+    value: true
+  description: 'Use this image compression tool to make image between 300Kb and 800Kb:
+    <a href="https://www.adobe.com/photoshop/online/compress-image.html" title="https://www.adobe.com/photoshop/online/compress-image.html"
+    target="_blank">https://www.adobe.com/photoshop/online/compress-image.html</a>'
+- type: text
+  name: permalink
+  label: Permalink
+  description: If you change this link, you must manually update the Site Menu in
+    the Site Configuration section.
+- name: page-sections
+  type: include
+  config: {}
+  template: page-sections
+  label: Page Sections
+  description: To add html content to this page, add a new entry in Page Sections.
+    Make sure the page section is published, then choose that section from this list
+    and press save.
+pages:
+- pages/education.html
+- pages/news-and-activities.html
+- pages/outreach-engagement.html
+- pages/project-objectives.html
+- pages/project-overview.html
+- pages/research.html
+- pages/stakeholder-advisory-board.html
