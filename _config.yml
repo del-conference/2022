@@ -30,7 +30,7 @@ permalink: pretty
 
 port: 9002
 url:  # the base hostname & protocol for your site
-baseurl: ""
+baseurl: "/2022"
 repository: del-conference/2022
 # exclude this stuff when building the static site
 exclude: [".gitignore", "README.md", "Gemfile", "Gemfile.lock", "vendor/bundle"]

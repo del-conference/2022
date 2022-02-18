@@ -5,7 +5,7 @@ layout: page
 <div class="row head-spacing foot-spacing">
   <div class="small-12 medium-4 columns">
     {% if page.primary-image and page.primary-image != empty and page.primary-image != '' and page.primary-image != null %}
-    <img alt="Image for {{ page.title}}" src="/{{ page.primary-image }}">
+    <img alt="Image for {{ page.title}}" src="{{ page.primary-image | prepend: '/' | prepend: site.baseurl }}">
     {% endif %}
   </div>
   

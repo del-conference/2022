@@ -6,7 +6,7 @@ layout: default
 
 {% include top-bar.html %}
 {% if page.enable-default-header == true %}
-<div class=" isolate {{page.title | slugify }}-banner" style="background: url('/{{ page.page-header-image }}') center center/cover no-repeat;">
+<div class=" isolate {{page.title | slugify }}-banner" style="background: url('{{ page.page-header-image | prepend: '/' | prepend: site.baseurl }}') center center/cover no-repeat;">
   <!-- TOP BAR -->
     <div class="row header-content front-page-header">
       {% if page.text-heading == '' or page.text-heading == empty or page.text-heading == null %}  
