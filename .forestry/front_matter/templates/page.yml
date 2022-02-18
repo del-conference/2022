@@ -36,6 +36,8 @@ fields:
     source:
       type: pages
       section: page-sections
+  description: To add text and media to this page, please create a new "Page Section."
+    Once it's created, it should appear in the dropdown list and can be selected.
 pages:
 - pages/conference.html
 - pages/day-1.html
