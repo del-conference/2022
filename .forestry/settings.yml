@@ -6,9 +6,6 @@ webhook_url:
 sections:
 - type: heading
   label: Content
-- type: document
-  path: pages/about.html
-  label: About
 - type: directory
   path: _page-sections
   label: Page Sections
