@@ -20,5 +20,3 @@ fields:
 - type: number
   name: page-order
   label: page-order
-pages:
-- _stakeholder-groups/stakeholder-group-1.md

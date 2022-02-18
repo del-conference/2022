@@ -6,6 +6,10 @@ webhook_url:
 sections:
 - type: heading
   label: Content
+- type: document
+  path: pages/about.html
+  label: About
+  match: "**/*"
 - type: directory
   path: _page-sections
   label: Page Sections
@@ -20,46 +24,6 @@ sections:
   match: "**/*"
   templates:
   - person
-- type: directory
-  path: _news-activities
-  label: News and Activities
-  create: documents
-  match: "**/*"
-  templates:
-  - news-activity
-- type: directory
-  path: _research
-  label: Research Projects
-  create: documents
-  match: "**/*"
-  templates:
-  - research
-- type: directory
-  path: _outreach-engagement
-  label: Outreach Projects
-  create: documents
-  match: "**/*"
-  templates:
-  - outreach-project
-- type: directory
-  path: _objective-teams
-  label: Objective Teams
-  create: documents
-  match: "**/*"
-  templates:
-  - objective-team
-- type: directory
-  path: _stakeholder-groups
-  label: Stakeholder Groups
-  create: documents
-  match: "**/*"
-- type: directory
-  path: _courses
-  label: Courses
-  create: documents
-  match: "**/*"
-  templates:
-  - course
 - type: directory
   path: _front-page-callouts
   label: Home Page Announcements
