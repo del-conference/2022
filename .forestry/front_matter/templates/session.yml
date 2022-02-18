@@ -89,5 +89,3 @@ fields:
   showOnly:
     field: enable-button-link
     value: true
-pages:
-- _sessions/day-2/title-for-the-day-1-11am-session.md
