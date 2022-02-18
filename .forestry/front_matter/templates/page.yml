@@ -26,3 +26,5 @@ fields:
 - type: list
   name: page-sections
   label: page-sections
+pages:
+- pages/conference.html
