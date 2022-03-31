@@ -1,5 +1,4 @@
-# Thriving Agriculture Systems in Urbanized Landscapes
-
+# DEL Website
 ## Default (Git Pages - Automatic when pushed to the repo)
 To manually build for git pages: ```bundle exec jekyll build```
 
